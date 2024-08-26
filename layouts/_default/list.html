@@ -2,6 +2,8 @@
   <article class="doc">
     <h1 class="page">{{ .Title | markdownify }}</h1>
     {{ .Content }}
+    {{ partial "featured" . }}
+    <h2 class="page"> {{ i18n "recent" }} </h2>
     {{ range .Paginator.Pages }}
       {{ partial "post-preview.html" . }}
     {{ end }}

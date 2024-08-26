@@ -3,6 +3,7 @@ title: "Cmake Conan"
 date: 2023-02-05
 categories: ['C++']
 tags: ['CMake', 'Conan', 'C++']
+featured: true
 ---
 
 My exploration started with CMake and Conan. Their integration changed a lot and for better.

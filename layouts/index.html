@@ -2,6 +2,8 @@
   <article class="doc">
     {{ .Content }}
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+    {{ partial "featured" . }}
+    <h2 class="page"> {{ i18n "recent" }} </h2>
     {{ range $paginator.Pages }}
       {{ partial "post-preview.html" . }}
     {{ end }}

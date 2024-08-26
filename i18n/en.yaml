@@ -7,12 +7,16 @@
   translation: "January 2, 2006"
 - id: editThisPage
   translation: "Edit this page"
+- id: featured
+  translation: "Featured"
 - id: in
   translation: "in"
 - id: lastModified
   translation: "(Last modified on {{ . }})"
 - id: postedOnDate
   translation: "Posted on {{ . }}"
+- id: recent
+  translation: "Recent"
 - id: taggedWith
   translation: "Tagged with"
 

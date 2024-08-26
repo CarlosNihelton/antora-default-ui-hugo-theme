@@ -4,6 +4,7 @@ date = "2024-08-20"
 categories = ["Web"]
 tags = ["AsciiDoc"]
 feature = "blogging.jpg"
+featured = true
 +++
 :toc:
 :toc-placement: preamble

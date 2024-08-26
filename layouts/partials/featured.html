@@ -1,0 +1,14 @@
+{{ if gt .Site.Params.featuredItems 0 }}
+{{ if eq .Paginator.PageNumber 1 }}
+{{ $feat := where .Paginator.Pages "Params.featured" "=" true }}
+{{ $featLen := math.Min .Site.Params.featuredItems (len $feat) }}
+{{ if gt $featLen 0 }}
+  <h2 class="page"> {{ i18n "featured" }} </h2>
+  <div class="grid-container">
+  {{ range first $featLen $feat }}
+      {{ partial "post-preview" . }}
+  {{ end }}
+  </div>
+{{ end }}
+{{ end }}
+{{ end }}

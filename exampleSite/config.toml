@@ -1,5 +1,6 @@
 baseURL = "https://example.com/"
 languageCode = "en"
+summaryLength = 27
 
 title = "Example Site"
 theme = "antora-default-ui-hugo-theme"
@@ -14,6 +15,7 @@ paginate = 3
   since = 2020
   enableThemeToggle=true
   hideSideNav=true
+  featuredItems = 3
 # Those parameters are needed because the templates cannot see the values of markup.asciidocext.attributes.
   # useHighlightjs=true
   # adocHighlightTheme="atom-one-dark"
