@@ -16,6 +16,7 @@ paginate = 3
   enableThemeToggle=true
   hideSideNav=true
   featuredItems = 3
+  # useFontAwesome = true
 # Those parameters are needed because the templates cannot see the values of markup.asciidocext.attributes.
   # useHighlightjs=true
   # adocHighlightTheme="atom-one-dark"
