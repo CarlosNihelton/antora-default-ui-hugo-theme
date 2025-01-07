@@ -1,12 +1,18 @@
 {{ define "main" }}
-  <article class="doc">
-    <h1 class="page">{{ .Title | markdownify }}</h1>
-    {{ .Content }}
-    {{ range .Paginator.Pages }}
-      {{ partial "post-preview.html" . }}
-    {{ end }}
-    <div class="pagination-centered">
-      {{ template "_internal/pagination.html" . }}
-    </div>
-  </article>
+<article class="doc">
+  {{ if .Params.showTitle}}
+  <h1 class="page">{{ .Title | safeHTML }}</h1>
+  {{end}}
+  <div class="blog-description">
+    {{ .Content | safeHTML }}
+  </div>
+  <br />
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections).ByDate.Reverse }}
+  {{ range $paginator.Pages }}
+  {{ partial "post-preview.html" . }}
+  {{ end }}
+  <div class="pagination-centered">
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</article>
 {{ end }}

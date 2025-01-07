@@ -1,0 +1,13 @@
++++
+title = "Posts"
+date = "2024-08-20"
+categories = ["Web"]
+tags = ["AsciiDoc"]
+showTitle = true
++++
+
+Welcome to the AsciiDoc website!
+--------------------------------
+This is a very cool place to be in.
+
+image::/posts/asciidoc-writing-guide/asciidoc.jpg[AsciiDoc Logo]
