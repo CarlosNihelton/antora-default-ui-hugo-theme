@@ -1,4 +1,4 @@
-name = "Hugo mADb - modern AsciiDoc blog theme"
+name = "Hugo mADb - modern AsciiDoc blogging theme"
 license = "MPL-2.0"
 licenselink = "https://github.com/olivecdev/hugo-madb/blob/master/LICENSE"
 description = "A humble blogging-focused fork of the great Antora default UI Hugo Theme, with full support for AsciiDoc"
