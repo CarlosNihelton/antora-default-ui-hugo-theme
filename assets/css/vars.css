@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/Asap-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: italic;
+}
+
 :root {
   /* colors */
   --color-white: #fff;
@@ -23,7 +39,7 @@
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
-  --body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --body-font-family: Asap, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --body-font-weight-bold: 500;
   --monospace-font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   --monospace-font-weight-bold: 500;
@@ -72,7 +88,7 @@
   /* doc */
   --doc-font-color: var(--color-jet-50);
   --doc-font-size: inherit;
-  --doc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
+  --doc-font-size--desktop: calc(18 / var(--rem-base) * 1rem);
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
